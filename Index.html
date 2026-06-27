@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genesis Pulse LLC</title>
+<style>
+    body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        line-height: 1.7;
+        color: #2d3748;
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 50px 20px;
+        background-color: #f8fafc;
+    }
+    .header {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .logo {
+        max-width: 220px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    h1 {
+        color: #1e3a8a;
+        font-size: 2.2rem;
+        margin: 0 0 12px 0;
+    }
+    .tagline {
+        font-size: 1.15rem;
+        color: #475569;
+        max-width: 620px;
+        margin: 0 auto;
+    }
+    section {
+        background: white;
+        padding: 36px;
+        margin-bottom: 28px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    }
+    h2 {
+        color: #1e3a8a;
+        border-bottom: 3px solid #e2e8f0;
+        padding-bottom: 12px;
+        margin-top: 0;
+        font-size: 1.35rem;
+    }
+    ul {
+        padding-left: 22px;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+    button {
+        background-color: #1e40af;
+        color: white;
+        border: none;
+        padding: 12px 28px;
+        font-size: 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+    button:hover {
+        background-color: #1e3a8a;
+    }
+    .hidden {
+        display: none;
+        margin-top: 20px;
+        padding: 24px;
+        background: #f8fafc;
+        border-radius: 8px;
+        border-left: 5px solid #1e40af;
+    }
+    .contact {
+        text-align: center;
+    }
+    .status {
+        display: inline-block;
+        background-color: #dbeafe;
+        color: #1e40af;
+        padding: 6px 16px;
+        border-radius: 9999px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-top: 12px;
+    }
+    .disclaimer {
+        margin-top: 50px;
+        padding-top: 25px;
+        border-top: 1px solid #e2e8f0;
+        font-size: 0.85rem;
+        color: #64748b;
+        text-align: center;
+        line-height: 1.6;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <img src="logo.png" alt="Genesis Pulse Logo" class="logo">
+    <h1>Genesis Pulse LLC</h1>
+    <p class="tagline">Advancing solid-state pulsed power technology for demanding aerospace and industrial applications.</p>
+    <div class="status">Technology Development in Progress</div>
+</div>
+
+<section>
+    <h2>The Technology</h2>
+    <p>Genesis Pulse is developing a new class of solid-state pulsed power technology capable of delivering high-energy pulses with improved reliability and operational stability.</p>
+    <p>The architecture is designed to address key challenges associated with high-fluence, repetitive pulsing, including thermal and mechanical stress management at the material interfaces.</p>
+</section>
+
+<section>
+    <h2>Current Status</h2>
+    <ul>
+        <li>Provisional patent filed with the USPTO</li>
+        <li>Early-stage proof-of-concept development underway</li>
+        <li>Seeking technical collaboration and manufacturing partners</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Potential Applications</h2>
+    <p>The technology is being developed with several high-value applications in mind:</p>
+    <ul>
+        <li><strong>Aerospace & Space Systems</strong> — Compact, high-performance pulsed power for electric and pulsed plasma propulsion, power conditioning, and onboard systems requiring high reliability in demanding environments.</li>
+        <li><strong>Advanced Manufacturing</strong> — High-energy pulsed processes such as magnetic pulse welding and electromagnetic forming, particularly for dissimilar metals and high-performance structures.</li>
+        <li><strong>Scientific & Research Facilities</strong> — Reliable, repeatable pulsed power delivery for laboratories, high-energy physics experiments, and specialized diagnostic systems.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Core Design Approach</h2>
+    <p>Click below for a high-level overview of the design philosophy.</p>
+    <button onclick="toggleTechnical()">Show Overview</button>
+
+    <div id="technical" class="hidden">
+        <p>The architecture employs a symmetric, multilayer solid-state design that incorporates specialized interfacial layers. These layers are intended to maintain material stability and performance under repeated high-energy pulsing conditions.</p>
+        <p>This approach focuses on managing internal stresses and preserving interface integrity during demanding operational cycles.</p>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact</h2>
+    <p>
+        <strong>Genesis Pulse LLC</strong><br>
+        Palm Bay, Florida, USA<br><br>
+        <strong>Email:</strong> MTWIHLLC@gmail.com
+    </p>
+    <p style="margin-top: 30px; font-size: 0.95rem; color: #475569;">
+        We are happy to execute a mutual NDA prior to discussing detailed technical information.
+    </p>
+</section>
+
+<!-- Disclaimer -->
+<div class="disclaimer">
+    <p><strong>Disclaimer:</strong> Genesis Pulse LLC is currently in the early development stage of its pulsed power technology. 
+    The information presented on this website describes the intended design principles, performance goals, and potential applications of the technology. 
+    Actual performance characteristics, reliability, and commercial readiness have not yet been fully validated through completed testing. 
+    All technical details are subject to change as development progresses. 
+    Certain aspects of the technology are the subject of provisional patent protection. 
+    This website is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any products or services.</p>
+</div>
+
+<script>
+function toggleTechnical() {
+    const tech = document.getElementById('technical');
+    if (tech.style.display === 'block') {
+        tech.style.display = 'none';
+    } else {
+        tech.style.display = 'block';
+    }
+}
+</script>
+
+</body>
+</html>
